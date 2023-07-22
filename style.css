@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white; 
+    font-family: Nunito;
+}
+.box {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #1DCD8D;
+}
+.block {
+    z-index: 1;
+    position: absolute;
+}
+.still {
+    font-size: 5rem;
+    color: black;
+    font-family: Nunito;
+}
+.name {
+    font-size: 6rem;
+    color: white;
+    font-family: Nunito;
+}
+.static {
+    font-family: Nunito;
+    margin-top: 56%;
+}
+.dynamic {
+    font-family: Nunito;
+    margin-left: 60px;
+    margin-top: 60%;
+}
+.wrap {
+    display: flex;
+    font-family: sans-serif;
+}
+.wrap .static {
+    color: black;
+    font-size: 30px;
+    font-weight: 400;
+}
+.wrap .dynamic {
+    margin-left: 15px;
+    line-height: 45px;
+    height: 45px;
+    overflow: hidden;
+}
+.dynamic li{
+    color: white;
+    list-style: none;
+    font-size: 30px;
+    font-weight: 500;
+    top: 0;
+    position: relative;
+    animation: slide 18s steps(6) infinite;
+}
+@keyframes slide{
+    100%{
+        top: -270px;       
+    }
+}
+.dynamic li {
+    position: relative;
+}
+.dynamic li::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background-color: #1DCD8D;
+    border-left: 2px solid white;
+    animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+}
+.text-decoration-underline {
+    color: white;
+}
+.hello {
+    font-size: 3rem;
+    color: #1DCD8D;
+}
+.info {
+    color: black;
+}
+.para {
+    color: white;
+}
+.second {
+    color: white;
+}
+.education {
+    font-size: 3rem;
+    color: #1DCD8D;
+}
+.school {
+    color: #1DCD8D;
+}
+.college {
+    color: #1DCD8D;
+}
+.work {
+    color: black;
+}
+.svg {
+    background-color: #1DCD8D;
+}
+.gradient-background {
+    background: linear-gradient(300deg, #ffa240, #ff6213, #ff6213);
+    background-size: 180% 180%;
+    animation: gradient-animation 8s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+.foot {
+    background-color: #1DCD8D;
+    color: black;
+}
+.skill {
+    background-color: #1A2529;
+}
+.secondpage {
+    color: black;
+}
+.heading {
+    color: #1DCD8D;
+    font-size: 3rem;
+}
+.number {
+    color: white;
+}
+.btn {
+    background-color: #1DCD8D;
+    color: white;
+}
+.contact {
+    color: white;
+}
+.nav {
+    color: white;
+}
